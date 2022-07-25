@@ -12,16 +12,13 @@ body {
 
 .page-wrap {
     background-color: #E5E5E5;
-    min-height: 100vh;
-    background-position: center;
 }
 
 .container {
     max-width: 1110px;
     margin: 0 auto;
     padding: 0 30px;
-    box-sizing: content-box;
-    border: 5px solid black;
+    width: 100%;
 }
 
 .flex-container {
@@ -78,6 +75,7 @@ hr {
 .contact {
     align-items: center;
     gap: 40px;
+    margin-right: 15px;
 }
 
 .h1 {
@@ -114,12 +112,14 @@ hr {
 
 
 .main {
-    min-height: calc(100vh - 285px);
+    min-height: calc(100vh - 200px);
     background-image: url(../images/bg-image.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 20px 0;
+    display: flex;
+    align-items: center;
 }
 
 .banner-txt-btn {
@@ -144,6 +144,8 @@ hr {
 
 
 
+
+
 .h3 {
     font-size: 25px;
     margin-bottom: 20px;
@@ -152,24 +154,27 @@ hr {
 }
 
 .cards {
-    display: flex;
     flex-direction: row ;
-    flex-wrap: wrap;
     margin: 0 auto;
     gap: 15px;
 }
 
 .card-item {
+    max-width: 248px;
+    min-height: 363px;
+    width: 100%;
     background-color: white;
     margin-bottom: 20px;
     list-style: none;
     padding: 25px 30px;
-    max-width: 258px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.chear-img {
-    max-width: 125px;
-    margin: 0 auto ;
+.txt-center {
+    text-align: center;
 }
 
 .h4 {
@@ -197,8 +202,8 @@ hr {
 
 .flex-cards {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 20px;
     margin-top: 50px;
     margin-bottom: 60px;
@@ -207,7 +212,8 @@ hr {
 .pink-card {
     background-color: #F13C6E;
     list-style: none;
-    width: 530px;
+    width: 100%;
+    max-width: 510px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -215,19 +221,24 @@ hr {
     padding: 30px;
 }
 
+.card-description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+}
+
 .card-head {
     color: white;
     font-size: 18px;
     line-height: 21px;
     font-weight: 700;
-    margin-bottom: 25px;
 }
 
 .pink-card-txt {
     color: white;
     font-weight: 400;
     font-size: 14px;
-    margin-bottom: 25px;
 }
 
 .input-email {
@@ -238,9 +249,12 @@ hr {
     font-size: 14px;
     text-align: center;
     padding: 5px 30px;
-    border: white;
-
+    border: none;
+    max-width: 225px;
+    width: 100%
 }
+
+
 
 
 
@@ -260,11 +274,12 @@ hr {
     align-items: center;
     background-color: white;
     text-align: center;
-    width: 270px;
+    width: 260px;
 }
 
 .impuls-img {
     max-width: 150px;
+    width: 100%;
 }
 
 
@@ -273,30 +288,36 @@ hr {
 
 
 .categories {
-    gap: 180px;
-    margin-top: 20px;
+    padding: 60px 0 60px;
+}
+
+.categories-wrap {
+    gap: 30px;
 }
 
 .categories-list {
-    list-style: none;
-    padding: 30px 30px 30px 0;
+    width: calc(25% - 40px);
+    min-width: 100px;
+    margin-left: 15px;
 }
 
 .h5-footer {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     font-weight: 500;
     font-size: 16px;
 }
 
 .categories-item {
+    display: flex;
+    flex-direction: column;
     padding-top: 25px;
+    gap: 20px;
 }
 
 .popular {
     font-weight: 400;
     font-size: 12px;
     color: #828282;
-    margin-bottom: 15px;
 }
 
 .popular:hover {
@@ -340,6 +361,7 @@ hr {
     justify-content: space-between;
     gap: 40px;
     padding: 25px 0 25px;
+    margin-right: 15px;
 }
 
 .footer-txt {
