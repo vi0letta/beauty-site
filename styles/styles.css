@@ -128,16 +128,29 @@ hr {
 
 .h2,
 .img-txt {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: white;
+}
+
+.h2 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.img-txt {
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .img-btn {
     padding: 5px 30px;
     color: white;
-    background-color: #F13C6E;
     border: 2px solid #FFFFFF;
     border-radius: 40px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 
@@ -148,7 +161,7 @@ hr {
 
 .h3 {
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-weight: 700;
     margin-top: 40px;
 }
@@ -248,7 +261,7 @@ hr {
     font-weight: 400;
     font-size: 14px;
     text-align: center;
-    padding: 5px 30px;
+    padding: 7px 30px;
     border: none;
     max-width: 225px;
     width: 100%
